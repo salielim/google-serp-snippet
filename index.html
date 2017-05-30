@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Google SERP Snippet</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="jumbotron">
+  <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2000px-Google_2015_logo.svg.png" width="133">  SERP Snippet</h1>
+  <p>Use this tool when crafting your Title and Meta descriptions, you can see a preview of your site's snippet on Search Engine Results Page (SERPs).
+  </p>
+
+  <div>URL: <input type="url" name="url" placeholder="http://www.site.com/slug-less-than-5-words" style="width: 315px;" placeholder="Add comments:" onkeyup="document.getElementById('urlSlug').innerHTML = this.value"></div>
+  <div>SEO Title: <input type="text" id="title" name="title" style="width: 315px;" placeholder="Titles truncated after approx. 70 characters" onkeyup="titleCheckPreview()">
+  </div>
+  <div>Meta Description: <input type="text" id="description" name="description" style="width: 315px;" placeholder="Descriptions truncated after approx. 150 characters" onkeyup="metaCheckPreview()"></div>
+  </br>
+  <div><strong><mark>SERP Preview:
+    </mark></strong>
+    <div id="seoTitle"></div>
+    <div id="urlDomain"></div>
+    <div id="urlSlug"></div>
+    <div id="metaDescription"></div>      </div>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
